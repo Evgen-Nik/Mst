@@ -1,0 +1,14 @@
+.title  {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    color: var(--white);
+    &_h1 {
+        font-size: 80px;
+        line-height: 96px;
+    }
+    &_h2 {
+        font-size: 54px;
+        line-height: 60px;
+        color: var(--grey_text);
+    }
+}

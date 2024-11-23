@@ -1,0 +1,47 @@
+.advantages {
+    margin-top: 100px;
+    margin-left: -162px;
+    margin-right: -162px;
+    min-height: 720px;
+    display: flex;
+    justify-content: space-between;
+    &__wrapper {
+        padding: 53px 53px 0 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__item {
+        background: rgba(40,40,41,.7);
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        border-bottom: 1px solid var(--grey_line);
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            background: url('../icons/snowflake.svg') center center no-repeat;
+            left: 0;
+            width: 37px;
+            height: 37px;
+            color: var(--white);
+        }
+    }
+    &__left, &__right {
+        width: 30%;
+        height: inherit;
+        object-fit:cover;
+    }
+}

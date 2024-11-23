@@ -1,0 +1,54 @@
+.promo {
+    background: var(--grey_dark);
+    padding-top: 332px;
+    margin-left: -162px;
+    margin-right: -162px;
+    position: relative;
+    min-height: 1000px;
+    &__wrapper {
+        margin-left: 162px;
+        max-width: 50%;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 760px;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__list {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    &__item {
+        height: 37px;
+        background: rgba(40,40,41,.7);
+        position: relative;
+        padding-left: 60px;
+        padding-right: 20px;
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        &:before {
+            position: absolute;
+            content: '';
+            background: url('../icons/snowboarding.svg') center center no-repeat;
+            left: 0;
+            width: 37px;
+            height: 37px;
+            color: var(--white);
+        }
+    }
+    &__text {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__buttons {
+        margin-top: 40px;
+    }
+}

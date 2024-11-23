@@ -1,0 +1,60 @@
+@import 'fonts/fonts';
+
+@import 'base/variables';
+
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--grey);
+}
+html {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+ol li {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+	position: relative;
+}
+
+@import 'common/title';
+@import 'common/text';
+@import 'common/button';
+@import 'common/logo';
+
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/promo';
+@import 'blocks/advantages';
+@import 'blocks/order';
+@import 'blocks/footer';
+
+@import 'blocks/media';

@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    margin-top: 100px;
+    &__top {
+        min-height: 94px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        border-top: 2px solid var(--desert);
+        border-bottom: 2px solid var(--desert);
+    }
+    &__bottom {
+        margin-top: 43px;
+        display: grid;
+        grid-template: repeat(2, 78px) / repeat(auto-fit, minmax(500px, auto));
+        grid-auto-rows: 78px;
+        justify-content: space-between;
+        align-items: center;
+        &_2, &_5 {
+            justify-self: center;
+        }
+        &_3, &_6 {
+            justify-self: end;
+        }
+    }
+}
